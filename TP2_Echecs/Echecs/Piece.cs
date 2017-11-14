@@ -24,9 +24,9 @@ namespace TP2_Echecs.Echecs
         public Piece(TypePiece type, Joueur joueur)
         {
             
-			this.joueur = joueur;
+            this.joueur = joueur;
             info = InfoPiece.GetInfo(joueur.couleur, type);
-            position = new Case(partie, piece, couleur, x, y);
+            position = new Case(partie, this, couleur, x, y);
                 
             
             
